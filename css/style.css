@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+div.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+}
+
+.left-login{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 5vh;
+    font-weight: bolder;
+    color: #2DFF9D;
+    letter-spacing: 3px;
+
+}
+.left-login .img-woman{
+    width: 60vh;
+}
+.right-login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login .login-form{
+    width: 50%;
+    background-color: #2DFF9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #2DFF9D;
+}
+
+.right-login .login-form> h1{
+    margin: 5px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 68px;
+    font-size: 50px;
+    font-style: normal;
+}
+.right-login .input-login{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.right-login .input-login > input{
+    width: 100%;
+    background-color: rgba(81, 79 ,79, 0.5);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    outline: none;
+    color: #FFF;
+}
+
+.right-login .input-login > input::placeholder{
+    color: rgba(157, 155 ,155, 1);
+    font-weight: 400;
+    line-height: 21.79;
+    font-size: 16px;
+}
+
+.right-login .input-login > label{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button{
+    width: 50%;
+    background-color: #FFF;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2DFF9D;
+  
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 25px;
+    text-align: center;
+}

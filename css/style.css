@@ -1,112 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500;600;700&display=swap');
+
 
 body{
-    margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    margin: 0;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-div.main-login{
+.main{
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #fff;
 }
 
-.left-login{
+.left{
     display: flex;
     width: 50vw;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.left-login > h1{
-    font-size: 5vh;
-    font-weight: bolder;
-    color: #2DFF9D;
-    letter-spacing: 3px;
-
-}
-.left-login .img-woman{
-    width: 60vh;
-}
-.right-login{
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.right-login .login-form{
-    width: 50%;
-    background-color: #2DFF9D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 40px #2DFF9D;
-}
-
-.right-login .login-form> h1{
-    margin: 5px;
-    color: #FFF;
+.left > h1{
+    font-size: 33px;
     font-weight: 700;
-    line-height: 68px;
-    font-size: 50px;
-    font-style: normal;
-}
-.right-login .input-login{
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 5px 10px;
+    line-height: 54.48px;
+    color: #2DFF9D;
 }
 
-.right-login .input-login > input{
+.left > img{
+    width: 400px;
+}
+.right{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right .form-div{
     width: 100%;
-    background-color: rgba(81, 79 ,79, 0.5);
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right .form-div > h3{
+    color: #2DFF9D;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.48px;
+}
+
+.right .form-div .input-box{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 5px 10px;
+}
+
+.right .form-div .input-box > input{
+    width: 50%;
     border: none;
-    border-radius: 15px;
+    background-color: #E2E2E2;
+    padding: 20px 15px;
+    border-radius: 5px;
     box-sizing: border-box;
     outline: none;
-    color: #FFF;
+    color: black;
 }
 
-.right-login .input-login > input::placeholder{
-    color: rgba(157, 155 ,155, 1);
+.right .form-div .input-box > input::placeholder{
+    font-size: 14px;
+    color: #9D9B9B;
     font-weight: 400;
-    line-height: 21.79;
-    font-size: 16px;
+    line-height: 21.79px;
 }
-
-.right-login .input-login > label{
-    color: #FFF;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-button{
-    width: 50%;
-    background-color: #FFF;
-    padding: 16px 0;
-    margin: 25px;
-    border: none;
-    border-radius: 20px;
+.right .form-div > button{
     cursor: pointer;
-    color: #2DFF9D;
-  
-    font-size: 16px;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 25px;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border-radius: 15px;
+    border: none;
+    background-color: #2DFF9D;
+    color: #FFF;
     text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.right .form-div > button:hover{
+    background-color: #31FF6A;
+    transition: 2s;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #E2E2E2 inset;
+}
+
+.right .form-div .input-box > input:focus, input::selection{
+    outline: 2px solid #31FF6A;
+}
+
+
+@media (max-width: 890px) {
+    body{
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .left{
+        width: 100%;
+    }
+
+    .left img{
+        width: 250px;
+    }
+    .right{
+        width: 100%;
+    }
+    
 }
